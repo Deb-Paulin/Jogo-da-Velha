@@ -1,0 +1,35 @@
+@import url(./styles/cell.css);
+@import url(./styles/button.css);
+@import url(./styles/results.css);
+
+:root {
+    --cor-de-fundo: linear-gradient(90deg, rgba(114,21,184,1) 47%, rgba(172,120,255,1) 100%);
+    --branco: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*background: linear-gradient(90deg, rgba(217,194,230,1) 19%, rgba(214,205,222,1) 100%); - versão modo claro */
+    height: 100vh;
+    width: 100vw;
+    background: var(--cor-de-fundo)
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);  
+}
+
+
+
