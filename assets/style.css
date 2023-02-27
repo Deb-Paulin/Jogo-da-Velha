@@ -5,6 +5,8 @@
 :root {
     --cor-de-fundo: linear-gradient(90deg, rgba(114,21,184,1) 47%, rgba(172,120,255,1) 100%);
     --branco: #ffffff;
+    --cinza: rgba(255, 255, 255, 0.3);
+    --preto-transparente: rgba(0, 0, 0, 0.8);
 }
 
 * {
@@ -29,6 +31,13 @@ body {
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(3, auto);  
+}
+
+.container.x .cell:not(.x):not(.circle):hover::after,
+.container.x .cell:not(.x):not(.circle):hover::before,
+.container.circle .cell:not(.x):not(.circle):hover::after,
+.container.x .cell:not(.x):not(.circle):hover::before {
+  background: var(--cinza) !important;
 }
 
 
