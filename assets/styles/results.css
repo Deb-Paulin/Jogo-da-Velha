@@ -13,7 +13,7 @@
 
 .results__restart {
     font-size: 2.5rem;
-    background-color: var(--cor-de-fundo);
+    background-color: var(--roxo);
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
@@ -23,7 +23,7 @@
 }
 
 .results__restart:hover {
-    color: var(--cor-de-fundo);
+    color: var(--roxo);
     background-color: var(--branco);
 }
 

@@ -3,9 +3,10 @@
 @import url(./styles/results.css);
 
 :root {
-    --cor-de-fundo: linear-gradient(90deg, rgba(114,21,184,1) 47%, rgba(172,120,255,1) 100%);
+    --cor-de-fundo: linear-gradient(90deg, rgba(208,147,242,1) 40%, rgba(213,173,249,1) 100%);
     --branco: #ffffff;
     --cinza: rgba(255, 255, 255, 0.3);
+    --roxo: #cf7df7;
     --preto-transparente: rgba(0, 0, 0, 0.8);
 }
 
