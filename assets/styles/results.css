@@ -31,3 +31,7 @@
     color: var(--branco);
     font-size: 5rem;
 }
+
+.show-results {
+    display: flex;
+}
