@@ -2,8 +2,9 @@ const cellElements = document.querySelectorAll('[data-cell]');
 const container = document.querySelector('[data-container]');
 const resultsMessageElement = document.querySelector('[data-results-message]');
 const resultsMessage = document.querySelector('[data-results]');
+const resultsRestart = document.querySelector('[data-results-restart]');
 
-let isCircleTurn = false;
+let isCircleTurn;
 
 const resultCombinations = [
     [0, 1, 2],
@@ -25,20 +26,23 @@ const resultCombinations = [
       cell.removeEventListener("click", handleClick);
       cell.addEventListener("click", handleClick, { once: true });
     }
+
+    setContainerHoverClass();
+    results.classList.remove('.show-results');
   }
 
 const endGame = (isDraw) => {
     if (isDraw) {
         resultsMessageElement.innerText = 'Empate!'
     } else {
-        resultsMessageElement.innerText = isCircleTurn ? 'O Venceu!' : 'X Venceu!'
+        resultsMessageElement.innerText = isCircleTurn ? 'O Venceu!' : 'X Venceu!';
     }
 
     results.classList.add('.show-results');
 }
 
 const checkForWin = (currentPlayer) => {
-    return winningCombinations.some((combination) => {
+    return resultCombinations.some((combination) => {
       return combination.every((index) => {
         return cellElements[index].classList.contains(currentPlayer);
       });
@@ -87,12 +91,14 @@ const handleClick = (e) => {
 
     if (isWin) {
         endGame(false);
-      } else if (isDraw) {
-        endGame(true);
-      } else {
-        // Mudar símbolo
+    } else if (isDraw) {
+        endGame(true)
+    } else {
+    // Mudar símbolo
         swapTurns();
-      }
+    }
 };
 
 startGame();
+
+resultsRestart.addEventListener('click', startGame);
