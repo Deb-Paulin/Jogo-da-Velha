@@ -36,7 +36,7 @@
     display: flex;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
     .winning-message-text {
         margin-top: -16rem;
         font-size: 3.5rem;
