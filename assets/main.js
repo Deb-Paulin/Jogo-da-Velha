@@ -1,12 +1,14 @@
 const cellElements = document.querySelectorAll('[data-cell]');
 const container = document.querySelector('[data-container]');
-const resultsMessageElement = document.querySelector('[data-results-message]');
-const resultsMessage = document.querySelector('[data-results]');
-const resultsRestart = document.querySelector('[data-results-restart]');
+const winningMessageTextElement = document.querySelector(
+  "[data-winning-message-text]"
+);
+const winningMessage = document.querySelector("[data-winning-message]");
+const restartButton = document.querySelector("[data-restart-button]");
 
 let isCircleTurn;
 
-const resultCombinations = [
+const winningCombinations = [
     [0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
@@ -28,26 +30,28 @@ const resultCombinations = [
     }
 
     setContainerHoverClass();
-    results.classList.remove('.show-results');
+    winningMessage.classList.remove("show-winning-message");
   }
 
-const endGame = (isDraw) => {
+  const endGame = (isDraw) => {
     if (isDraw) {
-        resultsMessageElement.innerText = 'Empate!';
+      winningMessageTextElement.innerText = "Empate!";
     } else {
-        resultsMessageElement.innerText = isCircleTurn ? 'O Venceu!' : 'X Venceu!';
+      winningMessageTextElement.innerText = isCircleTurn
+        ? "O Venceu!"
+        : "X Venceu!";
     }
+  
+    winningMessage.classList.add("show-winning-message");
+  };
 
-    results.classList.add('.show-results');
-}
-
-const checkForWin = (currentPlayer) => {
-    return resultCombinations.some((combination) => {
+  const checkForWin = (currentPlayer) => {
+    return winningCombinations.some((combination) => {
       return combination.every((index) => {
         return cellElements[index].classList.contains(currentPlayer);
       });
     });
-};
+  };
   
 const checkForDraw = () => {
     return [...cellElements].every((cell) => {
@@ -101,4 +105,4 @@ const handleClick = (e) => {
 
 startGame();
 
-resultsRestart.addEventListener('click', startGame);
+restartButton.addEventListener('click', startGame);

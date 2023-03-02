@@ -1,4 +1,4 @@
-.results {
+.winning-message {
     display: none;
     position: fixed;
     top: 0;
@@ -11,7 +11,7 @@
     flex-direction: column;
 }
 
-.results__restart {
+.winning-message-button {
     font-size: 2.5rem;
     background-color: var(--roxo);
     padding: 10px 15px;
@@ -22,16 +22,16 @@
     color: var(--branco)
 }
 
-.results__restart:hover {
+.winning-message-button:hover {
     color: var(--roxo);
     background-color: var(--branco);
 }
 
-.results__message {
+.winning-message-text {
     color: var(--branco);
     font-size: 5rem;
 }
 
-.show-results {
+.show-winning-message {
     display: flex;
 }
