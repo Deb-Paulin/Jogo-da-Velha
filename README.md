@@ -15,7 +15,7 @@ https://www.youtube.com/watch?v=0EiX9c4vzRs
 ![Screenshot from 2023-03-02 11-32-02](https://user-images.githubusercontent.com/113848968/222457997-7ea19e86-b785-45a2-b4a0-995d11fbdbe2.png)
 
 ## Deploy do projeto: 
-https://deb-paulin.github.io/Jogo-da-Velha/ 
+https://deb-paulin.github.io/Jogo-da-Velha/   
 
 Versão Mobile: 480px;
 
