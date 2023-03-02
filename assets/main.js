@@ -33,7 +33,7 @@ const resultCombinations = [
 
 const endGame = (isDraw) => {
     if (isDraw) {
-        resultsMessageElement.innerText = 'Empate!'
+        resultsMessageElement.innerText = 'Empate!';
     } else {
         resultsMessageElement.innerText = isCircleTurn ? 'O Venceu!' : 'X Venceu!';
     }
@@ -71,7 +71,7 @@ const setContainerHoverClass = () => {
 };
 
 const swapTurns = () => {
-    isCircleTurn = !isCircleTurn
+    isCircleTurn = !isCircleTurn;
 
     setContainerHoverClass();
 };
