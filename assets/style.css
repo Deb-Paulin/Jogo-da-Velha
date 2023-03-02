@@ -53,10 +53,10 @@ body {
 @media screen and (max-width: 480px) {
     .titulo {
         font-size: 36px;
-        margin-left: 6.5rem;
+        margin-left: 8.5rem;
     }
 
     .container {
-        margin-top: -4rem;
+        margin-top: 3rem;
     }  
 }
