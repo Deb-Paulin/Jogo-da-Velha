@@ -33,7 +33,7 @@
     border-radius: 50%;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
     .cell.x::before,
     .cell.x::after,
     .container.x .cell:not(.x):not(.circle):hover::after,
