@@ -17,7 +17,7 @@ https://www.youtube.com/watch?v=0EiX9c4vzRs
 ## Deploy do projeto: 
 https://deb-paulin.github.io/Jogo-da-Velha/
 
-Versão Mobile: 414px;
+Versão Mobile: 480px;
 
 ## Objetivos: 
 Meus objetivos foram: criar meu primeiro jogo, continuar avançando com Javascript e responsividade. 
