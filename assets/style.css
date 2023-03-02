@@ -50,7 +50,7 @@ body {
     font-size: 40px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
     .titulo {
         font-size: 36px;
         margin-left: 8.5rem;
