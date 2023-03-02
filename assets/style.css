@@ -43,8 +43,8 @@ body {
  
 .titulo {
     display: flex;
-    margin-left: 32.5rem;
-    position: fixed;
+    margin-left: 33rem;
+    position: absolute;
     top: 3rem;
     color: #fafafa;
     font-size: 40px;
@@ -53,7 +53,8 @@ body {
 @media screen and (max-width: 480px) {
     .titulo {
         font-size: 36px;
-        margin-left: 5rem;
+        margin-left: 8.5rem;
+        position: fixed;
     }
 
     .container {
