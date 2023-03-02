@@ -26,9 +26,27 @@
 .container.circle .cell:not(.x):not(.circle):hover::after,
 .container.circle .cell:not(.x):not(.circle):hover::after {
     content: "";
-    height: calc(100px * 0.9);
-    width: calc(100px * 0.9);
+    height: calc(100px * 0.8);
+    width: calc(100px * 0.8);
     background: var(--branco);
     position: absolute;
     border-radius: 50%;
+}
+
+@media screen and (max-width: 480px) {
+    .cell.x::before,
+    .cell.x::after,
+    .container.x .cell:not(.x):not(.circle):hover::after,
+    .container.x .cell:not(.x):not(.circle):hover::before {
+        height: calc(100px * 0.13);
+        width: calc(100px * 0.8);
+    }
+
+    .cell.circle::before,
+    .cell.circle::after,
+    .container.circle .cell:not(.x):not(.circle):hover::after,
+    .container.circle .cell:not(.x):not(.circle):hover::after {
+        height: calc(100px * 0.7);
+        width: calc(100px * 0.7);
+    }
 }

@@ -11,6 +11,11 @@
     flex-direction: column;
 }
 
+.winning-message-text {
+    color: var(--branco);
+    font-size: 5rem;
+}
+
 .winning-message-button {
     font-size: 2.5rem;
     background-color: var(--roxo);
@@ -27,11 +32,17 @@
     background-color: var(--branco);
 }
 
-.winning-message-text {
-    color: var(--branco);
-    font-size: 5rem;
-}
-
 .show-winning-message {
     display: flex;
+}
+
+@media screen and (max-width: 480px) {
+    .winning-message-text {
+        margin-top: -16rem;
+        font-size: 3.5rem;
+    }
+    
+    .winning-message-button {
+        font-size: 1.5rem;
+    }
 }
